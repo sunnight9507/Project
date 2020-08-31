@@ -3,8 +3,6 @@
 ### 프로젝트 명 : 찾아주 Cat! :cat: Dog! :dog:
 - 진행 기간: 2020.07 ~ 2020.08
 
-
-
 ### 1. 개발 배경 :question:
 - '19년 기준 유실 및 유기동물 135,000 마리 중 입양(26.4%), **자연사`(24.8%)`**, **안락사`(21.8%)`**, 반환(12.1%)
 - 만약 실제로 동물을 잃어버렸을 경우 **전단지 제작 베포, 커뮤니티 신고 게시, 관리시스템 수시 확인**
@@ -13,7 +11,6 @@
 - 공고에 올라온 이후부터 매일 약 370건 개별 확인 필요
 - 기존 상용 서비스 비교
 
-
 | **종합유기견보호센터** | **포인핸드** |
 | :-----------: | :-----------: |
 | 유기동물 종합 커뮤니티 | 사설 모바일 서비스 |
@@ -21,9 +18,7 @@
 
 - 관리시스템 단순 연동 전달 이외 **`반환`에 특화된 기술집약 서비스 전무**
 
-
-
-
+<br/><br/><br/>
 ### 2. 서비스 개요 :memo:
 - **사진 한장**으로 실종 동물을 찾도록 도와주는 **`반환` 특화 이미지 `매칭` 시스템**
 - 주요 기능
@@ -31,8 +26,7 @@
   - 유저 업로드 이미지와 **유사도 기반** 검색 / 목록화
   - 신규 공고 자동 매칭 및 **자동 이메일 발송**
   
-  
-  
+<br/><br/><br/>
 ### 3. 팀 소개 및 역할 :two_men_holding_hands:
 > **손우진**
 - 개발 환경 구축, 전반적인 프로젝트 관리, 발표
@@ -46,14 +40,13 @@
 > **홍승혜**
 - 모델 학습 데이터 수집, WEB 구현, 이메일 push 기능 
 
-
-
+<br/><br/><br/>
 ### 4. 시스템 구성도
 <div>
   <img width="700" src="https://github.com/Bigjob-team-12/Project/blob/master/_img/system.png">
 </div>
 
-
+<br/><br/><br/>
 ### 5. 프로젝트 요약
 - 인터넷에 산재되어 있는 유기동물 공고 정보를 수집 및 적재
 - **Fine-grained Classification**을 통해 생김새를 파악
@@ -81,9 +74,7 @@
   필터링된 이미지를 Metric Learning을 통해 털의 색, 조합의 유사성 확인<br/>
   이목구비 형태의 유사성과 털의 색, 무늬 등 패턴의 유사성을 모두 확인하기 위해 두 모델을 연결
 
-    
-    
-    
+<br/><br/><br/>
 ### 6. System
 ```Python
 $ main_project
@@ -108,7 +99,7 @@ $ main_project
 └─ _src
      ├─ batch
      │     ├─ send_email.py     # Check updated DB and send e-mail
-     │     └─ update_data.bat   # Batch file for crawling and Preprocessing 'post' images.    
+     │     └─ update_data.bat   # Batch file for crawling and Preprocessing 'post' images
      ├─ data_analysis
      │     ├─ dog_image_similarity
      │     │          ├─ copy_image.py # Copy the file from the input path to the output path
@@ -125,7 +116,7 @@ $ main_project
      │                └─ model.py   # Model structure for train.py
      │                
      ├─ data_analysis
-     │     └─ data_collection_zooseyo.py
+     │     └─ data_collection_zooseyo.py # 'http://www.zooseyo.or.kr/zooseyo_or_kr.html' site data crawling
      ├─ data_processing
      │     └─ image_data_download.py # Code for downloading image 
      │     └─ yolo_v4
@@ -172,6 +163,7 @@ urllib3==1.25.9
 werkzeug==1.0.1
 yaml==0.2.5
 ```
+<br/><br/><br/>
 ### 8. 프로젝트 진행 과정
 
 - **`200706-200710`**
