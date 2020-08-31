@@ -41,7 +41,7 @@
 
 ### 시스템 구성도
 <div>
-  <img width="300" src="https://github.com/Bigjob-team-12/Project/blob/master/_img/system.png">
+  <img width="700" src="https://github.com/Bigjob-team-12/Project/blob/master/_img/system.png">
 </div>
 
 ### 프로젝트 요약
@@ -57,7 +57,6 @@
 - **특정 개체 특성 중심 탐색**
   > 품종 등 메타데이터를 바탕으로 한 단순 검색을 넘어 개체의 시각적 특성을 바탕으로 한 유사성 비교를 수행<br/>
   공고 데이터의 90%를 차지하는 믹스견 역시 세부적인 특징을 분석해 유사한 개체를 찾아냄
-
 - **파이프라인 자동화**
   > 주기적으로 신규 등록 개체 수집 및 분석하여 기존 Query 개체와 비교<br/>
   유사도가 높은 개체 발견될 경우 메일 발송
